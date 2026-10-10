@@ -2508,21 +2508,25 @@ footer p {
    ======================================== */
 
 
-/* ---------- PAGE LOAD ---------- */
+//* ---------- PAGE LOAD ANIMATION ---------- */
 
 body {
-
-    opacity: 0;
-
-    transition: opacity 0.6s ease;
-
+    opacity: 1;
+    animation: page-fade-in 0.6s ease both;
 }
 
-
 body.page-loaded {
-
     opacity: 1;
+}
 
+@keyframes page-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
